@@ -1,5 +1,5 @@
 {
-    "name": "sudo/votes",
+    "name": "sudo/vote",
     "description": "Votes Sudo package",
     "type": "library",
     "license": "MIT",

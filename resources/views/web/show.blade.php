@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/assets/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/votes/css/style.css">
 <script src="/assets/votes/js/script.js" type="text/javascript"></script>
 <div class="votes-star" data-type="{{ $type }}" data-typeid="{{ $type_id }}">
 	@php
