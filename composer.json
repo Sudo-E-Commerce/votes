@@ -1,0 +1,27 @@
+{
+    "name": "sudo/votes",
+    "description": "Votes Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Giang Hung Viet",
+            "email": "ghvietptit@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Vote\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Vote\\Providers\\VoteServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
