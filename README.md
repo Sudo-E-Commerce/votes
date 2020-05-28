@@ -9,6 +9,7 @@ Mặc định package sẽ tạo ra giao diện quản lý cho module được �
 - Package cần phải có base `sudo/core` để có thể hoạt động không gây ra lỗi
 - Để có thể sử dụng Package cần require theo lệnh `composer require sudo/vote`
 - Chạy `php artisan migrate` để tạo các bảng phục vụ cho package
+- Chạy php artisan vendor:publish --tag=sudo/vote để public file config, và assets ra ngoài
 - Thêm câu lệnh @include('Vote::web.show', ['type'=>$table, 'type_id'=>$table_id]) vào vị trí muốn hiển thị tính năng đánh giá
 - Thêm cặp key => value trong mảng type tại file config/SudoVotes.php (File này được publics ra từ package) tương ứng với các trang có tính năng đánh giá 
 	VD: 'type' => [
