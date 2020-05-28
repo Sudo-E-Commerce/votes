@@ -91,10 +91,6 @@ class VoteServiceProvider extends ServiceProvider
             $this->publishes($all, 'sudo/vote');
             $this->publishes($assets, 'sudo/vote/assets');
             $this->publishes($config, 'sudo/vote/config');
-            // Khởi chạy chung theo core
-            $this->publishes($all, 'sudo/core');
-            $this->publishes($assets, 'sudo/core/assets');
-            $this->publishes($config, 'sudo/core/config');
         }
     }
 
