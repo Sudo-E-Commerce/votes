@@ -34,9 +34,9 @@ class VoteController extends AdminController
         $listdata->search('status', 'Trạng thái', 'array', config('app.status'));
         $listdata->search('type', 'Loại', 'array', $array_type);
         // Build các button hành động
-        $listdata->btnAction('status', 1, __('Table::table.active'), 'primary', 'fas fa-edit');
-        $listdata->btnAction('status', 0, __('Table::table.no_active'), 'warning', 'fas fa-edit');
-        $listdata->btnAction('delete', -1, __('Table::table.trash'), 'danger', 'fas fa-trash');
+        $listdata->btnAction('status', 1, __('Translate::table.active'), 'primary', 'fas fa-edit');
+        $listdata->btnAction('status', 0, __('Translate::table.no_active'), 'warning', 'fas fa-edit');
+        $listdata->btnAction('delete', -1, __('Translate::table.trash'), 'danger', 'fas fa-trash');
         // Build bảng
         $listdata->add('value', 'Số lượng sao đánh giá', 0);
         $listdata->add('', 'Tiêu đề trang được đánh giá', 0);
@@ -105,7 +105,7 @@ class VoteController extends AdminController
         // Điều hướng
         return redirect(route('admin.'.$this->table_name.'.index', $id))->with([
             'type' => 'success',
-            'message' => __('Core::admin.create_success')
+            'message' => __('Translate::admin.create_success')
         ]);
     }
 
@@ -171,7 +171,7 @@ class VoteController extends AdminController
         // Điều hướng
         return redirect(route('admin.'.$this->table_name.'.'.$redirect, $id))->with([
             'type' => 'success',
-            'message' => __('Core::admin.update_success')
+            'message' => __('Translate::admin.update_success')
         ]);
     }
 
